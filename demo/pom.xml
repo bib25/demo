@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
-		<license/>
+        <license/>
 	</licenses>
 	<developers>
 		<developer/>
@@ -46,8 +46,6 @@
 		<version>3.13.0</version>
 		<scope>compile</scope>
 		</dependency>
-
-
   <dependency>
   <groupId>javax.servlet</groupId>
   <artifactId>javax.servlet-api</artifactId>
