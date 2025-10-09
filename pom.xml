@@ -29,11 +29,16 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
-    <sonar.sources>src/main/java</sonar.sources>
-    <sonar.tests>src/test/java</sonar.tests>
-    <sonar.java.binaries>target/classes</sonar.java.binaries>
-    <sonar.exclusions>src/test/java/**/*</sonar.exclusions>
+		<properties>
+ 		 <java.version>17</java.version>
+  		<sonar.projectKey>my_project</sonar.projectKey>
+  		<sonar.host.url>http://http://172.31.39.182:9000</sonar.host.url>
+  		<sonar.login>sqa_a3b5a5b9b1d76b66615442fed0c202ed622581f3</sonar.login>
+  		<sonar.sources>src/main/java</sonar.sources>
+  		<sonar.tests>src/test/java</sonar.tests>
+  		<sonar.java.binaries>target/classes</sonar.java.binaries>
+  		<sonar.exclusions>src/test/java/**/*</sonar.exclusions>
+</properties>
 
 	</properties>
 	<dependencies>
@@ -74,6 +79,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+  				<groupId>org.sonarsource.scanner.maven</groupId>
+  				<artifactId>sonar-maven-plugin</artifactId>
+  				<version>4.0.0.4121</version>
+</plugin>
 		</plugins>
 	</build>
 
